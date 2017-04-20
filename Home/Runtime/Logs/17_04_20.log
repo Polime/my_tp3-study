@@ -1,0 +1,27 @@
+[ 2017-04-20T18:38:31+08:00 ] 127.0.0.1 /index.php/User/index
+ERR: Action:assgin您所请求的方法不存在！
+
+[ 2017-04-20T18:48:04+08:00 ] 127.0.0.1 /index.php/User/tp3.com/index.php/User/del/id/4
+ERR: 非法操作:tp3.com
+
+[ 2017-04-20T18:49:01+08:00 ] 127.0.0.1 /index.php/User/tp3.com/index.php/User/del/id/4
+ERR: 非法操作:tp3.com
+
+[ 2017-04-20T18:49:03+08:00 ] 127.0.0.1 /index.php/User/tp3.com/index.php/User/del/id/4
+ERR: 非法操作:tp3.com
+
+[ 2017-04-20T18:49:15+08:00 ] 127.0.0.1 /ThinkPHP/index.php/User/del/id/4
+ERR: 无法加载模块:ThinkPHP
+
+[ 2017-04-20T18:55:22+08:00 ] 127.0.0.1 /index.php/User/tp3.com/index.php/User/update/
+ERR: 非法操作:tp3.com
+
+[ 2017-04-20T19:47:01+08:00 ] 127.0.0.1 /index.php/User/index.php/User/creat
+ERR: 非法操作:index.php
+
+[ 2017-04-20T20:46:59+08:00 ] 127.0.0.1 /index.php/index/index
+ERR: 表达式错误:IT
+
+[ 2017-04-20T20:59:43+08:00 ] 127.0.0.1 /index.php/index/index
+ERR: 表达式错误:not like
+
