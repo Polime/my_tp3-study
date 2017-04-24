@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -24,15 +24,13 @@
         <th>sex</th>
         <th>操作</th>
       </tr>
-      <volist name="data" id="no">
-        <tr>
-          <td><{$no.id}></td>
-          <td><{$no.username}></td>
-          <td><{$no.sex}></td>
-          <td><a href="__URL__/del/id/<{$no.id}>">删除</a>
-            |<a href="__URL__/modefy/id/<{$no.id}>">修改</a></td>
-        </tr>
-      </volist>
+      <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$no): $mod = ($i % 2 );++$i;?><tr>
+          <td><?php echo ($no["id"]); ?></td>
+          <td><?php echo ($no["username"]); ?></td>
+          <td><?php echo ($no["sex"]); ?></td>
+          <td><a href="__URL__/del/id/<?php echo ($no["id"]); ?>">删除</a>
+            |<a href="__URL__/modefy/id/<?php echo ($no["id"]); ?>">修改</a></td>
+        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
     </table>
     <center>
       <button onclick="jump()">添加用户</button>

@@ -54,5 +54,15 @@
         $this->error('数据添加失败');
       }
     }
+    //编写search方法，实现搜索
+    public function search(){
+      // var_dump($_POST);
+      //获取POST的数据，根据数据组装查询的条件，根据条件从数据库中获取数据，返回个页面遍历
+      $where['username'] = array('like',"%$_POST['']%");
+      $n = M('User');
+      $arr = $n->where($where)->select();
+      $this->assign('$data',$arr);
+      $this->display('index');
+    }
   }
  ?>
