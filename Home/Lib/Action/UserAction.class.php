@@ -58,11 +58,24 @@
     public function search(){
       // var_dump($_POST);
       //获取POST的数据，根据数据组装查询的条件，根据条件从数据库中获取数据，返回个页面遍历
-      $where['username'] = array('like',"%$_POST['']%");
+      if(isset($_POST['username']) && $_POST['username'] !=null){
+      $where['username'] = array('like',"%{$_POST['username']}%");
+    }
+      if(isset($_POST['sex']) && $_POST['sex'] != null){
+      $where['sex'] = array('eq',$_POST['sex']);
+    }
       $n = M('User');
       $arr = $n->where($where)->select();
       $this->assign('$data',$arr);
       $this->display('index');
+    }
+    public function demo(){
+      $n = M('User');
+      $arr = $n->order(array('id'=>'asc'))->limit(1,5)->field(array('username'=>'name','sex'=>'s'))->select();
+      // $arr = $n->order("id")->limit("2")->select();
+      var_dump($arr);
+      // $this->display();
+      $this->show("abc");
     }
   }
  ?>

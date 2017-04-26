@@ -55,7 +55,8 @@ class IndexAction extends Action {
       // $name['id']=4;
       // $name['username']='dand';
       // $n->save($name);
-        $this->display();
+      // $this->display('index2');//访问同级下的index2文件
+      $this->display('public:test');//访问public文件夹下的test文件
     }
     public function show(){
       // echo "欢迎你".$_GET['name']."年龄".$_GET['age'];

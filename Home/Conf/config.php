@@ -14,5 +14,10 @@ return array(
   //运用DSN方法进行配置
   'DB_DSN'=>'mysql://root:root@localhost:3306/phptest',//使用DSN方式配置数据库信息
   'SHOW_PAGE_TRACE'=>true,//开启页面trace
+  'TMPL_TEMPLATE_SUFFIX'=>'.html',
+  // 'TMPL_FILE_DEPR'=>'_',//修改模板文件目录层次
+  // 'DEFAULT_THEME'=>'my',//设置默认模板主题
+  // 'TMOL_DETECT_THEME'=>true,//自动侦测模板主题
+  // 'THEME_LIST'=>''//支持的模板主题列表
 );
 ?>
