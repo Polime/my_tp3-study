@@ -20,8 +20,8 @@ return array(
   // 'TMOL_DETECT_THEME'=>true,//自动侦测模板主题
   // 'THEME_LIST'=>''//支持的模板主题列表
   'TMPL_PARSE_STRING'=>array(
-    '__CSS__'=>'/thinkPHP/public/CSS/',
-    '__JS__'=>'/thinkPHP/public/JS/',
+    '__CSS__'=>__ROOT__.'/Public/CSS',
+    '__JS__'=>__ROOT__.'/Public/JS',
   ),//配置CSS和JS的路径，添加自己的模板变量规则
 );
 ?>
