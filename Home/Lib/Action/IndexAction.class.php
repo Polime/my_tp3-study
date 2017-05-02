@@ -57,8 +57,11 @@ class IndexAction extends Action {
       // $n->save($name);
       // $this->display('index2');//访问同级下的index2文件
       // $this->display('./Public/error.html','utf-8','text/xml');//访问public文件夹下的test文件
-      $content = $this->fetch('Public:error');
-      $this->display($content);
+      // $content = $this->fetch('Public:error');
+      // var_dump($content);
+      // $this->display($content);
+      $content = "dan";
+      $this->assign('name','$content');
     }
     public function show(){
       // echo "欢迎你".$_GET['name']."年龄".$_GET['age'];

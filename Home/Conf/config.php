@@ -17,7 +17,11 @@ return array(
   'TMPL_TEMPLATE_SUFFIX'=>'.html',
   // 'TMPL_FILE_DEPR'=>'_',//修改模板文件目录层次
   // 'DEFAULT_THEME'=>'my',//设置默认模板主题
-  'TMOL_DETECT_THEME'=>true,//自动侦测模板主题
+  // 'TMOL_DETECT_THEME'=>true,//自动侦测模板主题
   // 'THEME_LIST'=>''//支持的模板主题列表
+  'TMPL_PARSE_STRING'=>array(
+    '__CSS__'=>'/thinkPHP/public/CSS/',
+    '__JS__'=>'/thinkPHP/public/JS/',
+  ),//配置CSS和JS的路径，添加自己的模板变量规则
 );
 ?>
