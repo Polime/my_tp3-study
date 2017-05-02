@@ -37,10 +37,10 @@ class IndexAction extends Action {
       // $c = $n->avg('id');
       // echo $c;
       //sql直接查询
-      $n = M();
+      // $n = M();
       // $reselt = $n->query("select * from tb_user where id = 6");//返回数组集或bool
-      $reselt = $n->execute("update tb_user set username='dan3' where username='dan2'");//返回影响行数或bool
-      var_dump($reselt);
+      // $reselt = $n->execute("update tb_user set username='dan3' where username='dan2'");//返回影响行数或bool
+      // var_dump($reselt);
   //增加数据
       // $n->id=3;
       // $n->username='dandan';
@@ -56,10 +56,14 @@ class IndexAction extends Action {
       // $name['username']='dand';
       // $n->save($name);
       // $this->display('index2');//访问同级下的index2文件
-      $this->display('public:test');//访问public文件夹下的test文件
+      // $this->display('./Public/error.html','utf-8','text/xml');//访问public文件夹下的test文件
+      $content = $this->fetch('Public:error');
+      $this->display($content);
     }
     public function show(){
       // echo "欢迎你".$_GET['name']."年龄".$_GET['age'];
-      $this->display();
+      // $this->display();
+      // $this->show('<b>加粗</b>');
+
     }
 }
