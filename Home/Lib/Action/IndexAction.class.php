@@ -60,13 +60,18 @@ class IndexAction extends Action {
       // $content = $this->fetch('Public:error');
       // var_dump($content);
       // $this->display($content);
-      $content = "dan";
-      $this->assign('name','$content');
+      // $content = "dan";
+      // $this->assign('name','$content');
+      // $this->assign('name',10);
+      // $this->assign('sex','男');
+      // $this->assign('age',18);
+      $this->assign('number',6);
+      $this->display();
     }
-    public function show(){
+    // public function show(){
       // echo "欢迎你".$_GET['name']."年龄".$_GET['age'];
       // $this->display();
       // $this->show('<b>加粗</b>');
 
-    }
+    // }
 }
