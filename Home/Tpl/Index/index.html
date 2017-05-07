@@ -13,7 +13,7 @@
   <body>
     <!-- hello <{$name}>
     <volist name="name" id="vo">
-      <{$vo.id}>----<{$vo.username}>---<{$vo.sex}></br>
+      <{$vo.id}><{$vo.username}>-<{$vo.sex}></br>
     </volist> -->
 
     <!-- <if condition='$sex eq "男"'> 调用分支判断
@@ -29,8 +29,8 @@
       <else/>
       成年
     </if> -->
-
-    <!-- <switch name='number'> case语句
+    <!-- switch语句 -->
+    <!-- <switch name='number'>
       <case value='1'>
         一个和尚挑水吃
       </case>
@@ -43,6 +43,54 @@
       <default/>
       这里是默认值
     </switch> -->
+
+    <!-- <table border="1" width="500px"> -->
+      <!-- <for start='0' end='10' name='j' step='2' comparsion='lt'>
+        <tr>
+          <td>
+            <{$j}> <! 默认$i为循环数,name改变循环数的名字 -->
+          <!-- </td>
+          <td>abc</td>
+        </tr>
+      </for>
+      <for start='10' end='0' step='-2' comparison='gt'> <! 倒序输出 -->
+        <!-- <tr>
+          <td>
+            <{$i}>
+          </td>
+          <td>abc</td>
+        </tr>
+      </for> -->
+    <!-- </table> -->
+
+    <!-- <volist name="list" id="v" >
+      <{$v}></br>
+    </volist> -->
+    <!-- <volist name="list" id="v" offset='1' length='3'>
+      <! 偏移量和输出长度 -->
+      <!-- <{$v}></br>
+    </volist>  -->
+    <!-- <volist name="list" id="v" >  <! 输出二维数组 -->
+      <!-- <{$v.username}></br>
+    </volist> -->
+
+    <!-- <foreach name='list' item='v' key='key'>
+      <{$key}><{$v}></br>
+    </foreach> -->
+    <table border="1" width="500px">
+      <foreach name='list' item='v'>
+        <tr>
+          <td><{$v.id}></td>
+          <td><{$v.username}></td>
+          <td><{$v.password}></td>
+          <if condition="$v.sex eq 1">
+            <td>男</td>
+            <else/>
+            <td>女</td>
+          </if>
+        </tr>
+      </foreach>
+    </table>
 
   </body>
 </html>

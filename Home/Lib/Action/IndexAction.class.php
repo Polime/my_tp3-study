@@ -61,11 +61,22 @@ class IndexAction extends Action {
       // var_dump($content);
       // $this->display($content);
       // $content = "dan";
+
       // $this->assign('name','$content');
       // $this->assign('name',10);
       // $this->assign('sex','男');
       // $this->assign('age',18);
-      $this->assign('number',6);
+      // $this->assign('number',6);
+
+      // $arr = array('a','b','c','d','e','f','g');
+      // $arr[0] = array('id'=>1,'username'=>'asc');
+      // $arr[1] = array('id'=>2,'username'=>'cas');
+      // $this->assign('list',$arr);
+
+      $user = M('User');
+      $arr = $user->select();
+      $this->assign('list',$arr);
+      // dump($arr);
       $this->display();
     }
     // public function show(){
