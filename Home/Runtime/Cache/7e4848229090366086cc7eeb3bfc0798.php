@@ -33,13 +33,13 @@
       这里是默认值<?php endswitch;?> -->
 
     <!-- <table border="1" width="500px"> -->
-      <!-- <?php $__FOR_START_911339091__=0;$__FOR_END_911339091__=10;for($j=$__FOR_START_911339091__;$j < $__FOR_END_911339091__;$j+=2){ ?><tr>
+      <!-- <?php $__FOR_START_759444795__=0;$__FOR_END_759444795__=10;for($j=$__FOR_START_759444795__;$j < $__FOR_END_759444795__;$j+=2){ ?><tr>
           <td>
             <?php echo ($j); ?> <! 默认$i为循环数,name改变循环数的名字 -->
           <!-- </td>
           <td>abc</td>
         </tr><?php } ?>
-      <?php $__FOR_START_566450724__=10;$__FOR_END_566450724__=0;for($i=$__FOR_START_566450724__;$i > $__FOR_END_566450724__;$i+=-2){ ?><! 倒序输出 -->
+      <?php $__FOR_START_1755927727__=10;$__FOR_END_1755927727__=0;for($i=$__FOR_START_1755927727__;$i > $__FOR_END_1755927727__;$i+=-2){ ?><! 倒序输出 -->
         <!-- <tr>
           <td>
             <?php echo ($i); ?>
@@ -55,7 +55,7 @@
       <!-- <?php echo ($v["username"]); ?></br><?php endforeach; endif; else: echo "" ;endif; ?> -->
 
     <!-- <?php if(is_array($list)): foreach($list as $key=>$v): echo ($key); echo ($v); ?></br><?php endforeach; endif; ?> -->
-    <table border="1" width="500px">
+    <!-- <table border="1" width="500px">
       <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>
           <td><?php echo ($v["id"]); ?></td>
           <td><?php echo ($v["username"]); ?></td>
@@ -64,7 +64,18 @@
             <?php else: ?>
             <td>女</td><?php endif; ?>
         </tr><?php endforeach; endif; ?>
-    </table>
+    </table> -->
+
+    <!-- <?php if(($n) == "10"): ?>是10<?php endif; ?> -->
+    <!-- <?php if(in_array(($n), explode(',',"9,10,11"))): ?>在里面<?php else: ?>不在里面<?php endif; ?> -->
+    <!-- <?php $_RANGE_VAR_=explode(',',"1,10");if($n>= $_RANGE_VAR_[0] && $n<= $_RANGE_VAR_[1]):?>在里面<?php else: ?> 不在里面<?php endif; ?> -->
+    <!-- <?php if(isset($n)): ?>m有赋值<?php else: ?>m没有赋值<?php endif; ?> -->
+    <!-- <?php if(empty($n)): ?>为空<?php else: ?>不空<?php endif; ?> -->
+    <!-- <?php define('m', '1'); ?>定义 -->
+    <!-- <?php if(defined("m")): ?>被定义<?php else: ?>未定义<?php endif; ?> -->
+    <!-- <assgin name='var' value='123'/>模板中变量赋值 -->
+
+    <?php echo "1"; ?>
 
   </body>
 </html>

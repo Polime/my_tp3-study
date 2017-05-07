@@ -73,10 +73,12 @@ class IndexAction extends Action {
       // $arr[1] = array('id'=>2,'username'=>'cas');
       // $this->assign('list',$arr);
 
-      $user = M('User');
-      $arr = $user->select();
-      $this->assign('list',$arr);
+      // $user = M('User');
+      // $arr = $user->select();
+      // $this->assign('list',$arr);
       // dump($arr);
+
+      $this->assign('n','');
       $this->display();
     }
     // public function show(){
