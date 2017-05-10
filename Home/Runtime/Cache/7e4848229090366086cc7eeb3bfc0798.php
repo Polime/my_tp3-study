@@ -1,4 +1,20 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <!-- <link rel="stylesheet" type="text/css" href="__PUBLIC__/CSS/[css].css" /> -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/CSS/test.css" />
+  </head>
+
+
+<div style="boder:1px solid grey;background-color:blue;height:100px;">
+  广告
+</div>
+
+  <body>
+    <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -8,6 +24,7 @@
     <!-- <script type="text/javascript" src="/Public/js/test.js"></script>默认PUBLIC路径
     <link rel="stylesheet" type="text/css" href=".///css/test.css" />其他路径 -->
     <!-- <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/test.css" /> -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/CSS/test.css" />
     </script>
   </head>
   <body>
@@ -33,13 +50,13 @@
       这里是默认值<?php endswitch;?> -->
 
     <!-- <table border="1" width="500px"> -->
-      <!-- <?php $__FOR_START_759444795__=0;$__FOR_END_759444795__=10;for($j=$__FOR_START_759444795__;$j < $__FOR_END_759444795__;$j+=2){ ?><tr>
+      <!-- <?php $__FOR_START_885285256__=0;$__FOR_END_885285256__=10;for($j=$__FOR_START_885285256__;$j < $__FOR_END_885285256__;$j+=2){ ?><tr>
           <td>
             <?php echo ($j); ?> <! 默认$i为循环数,name改变循环数的名字 -->
           <!-- </td>
           <td>abc</td>
         </tr><?php } ?>
-      <?php $__FOR_START_1755927727__=10;$__FOR_END_1755927727__=0;for($i=$__FOR_START_1755927727__;$i > $__FOR_END_1755927727__;$i+=-2){ ?><! 倒序输出 -->
+      <?php $__FOR_START_462440593__=10;$__FOR_END_462440593__=0;for($i=$__FOR_START_462440593__;$i > $__FOR_END_462440593__;$i+=-2){ ?><! 倒序输出 -->
         <!-- <tr>
           <td>
             <?php echo ($i); ?>
@@ -75,7 +92,11 @@
     <!-- <?php if(defined("m")): ?>被定义<?php else: ?>未定义<?php endif; ?> -->
     <!-- <assgin name='var' value='123'/>模板中变量赋值 -->
 
-    <?php echo "1"; ?>
+    <!-- <?php echo "直接写PHP代码"; ?> -->
 
+    <p>这里是首页</p>
+    <a href="__URL__/next">跳转到下一页</a>
   </body>
 </html>
+
+  </body>

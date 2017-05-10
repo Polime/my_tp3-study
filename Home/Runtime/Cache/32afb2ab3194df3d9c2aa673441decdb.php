@@ -1,1 +1,0 @@
-<?php if (!defined('THINK_PATH')) exit();?><b>加粗</b>

@@ -23,5 +23,7 @@ return array(
     '__CSS__'=>__ROOT__.'/Public/CSS',
     '__JS__'=>__ROOT__.'/Public/JS',
   ),//配置CSS和JS的路径，添加自己的模板变量规则
+  'LAYOUT_ON'=>true,
+  //开启模板渲染
 );
 ?>

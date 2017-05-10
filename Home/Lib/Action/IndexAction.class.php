@@ -78,7 +78,7 @@ class IndexAction extends Action {
       // $this->assign('list',$arr);
       // dump($arr);
 
-      $this->assign('n','');
+      // $this->assign('n','');
       $this->display();
     }
     // public function show(){
@@ -87,4 +87,8 @@ class IndexAction extends Action {
       // $this->show('<b>加粗</b>');
 
     // }
+
+    public function next(){
+      $this->display();
+    }
 }
