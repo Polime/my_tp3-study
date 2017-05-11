@@ -50,13 +50,13 @@
       这里是默认值<?php endswitch;?> -->
 
     <!-- <table border="1" width="500px"> -->
-      <!-- <?php $__FOR_START_885285256__=0;$__FOR_END_885285256__=10;for($j=$__FOR_START_885285256__;$j < $__FOR_END_885285256__;$j+=2){ ?><tr>
+      <!-- <?php $__FOR_START_589949284__=0;$__FOR_END_589949284__=10;for($j=$__FOR_START_589949284__;$j < $__FOR_END_589949284__;$j+=2){ ?><tr>
           <td>
             <?php echo ($j); ?> <! 默认$i为循环数,name改变循环数的名字 -->
           <!-- </td>
           <td>abc</td>
         </tr><?php } ?>
-      <?php $__FOR_START_462440593__=10;$__FOR_END_462440593__=0;for($i=$__FOR_START_462440593__;$i > $__FOR_END_462440593__;$i+=-2){ ?><! 倒序输出 -->
+      <?php $__FOR_START_2097140973__=10;$__FOR_END_2097140973__=0;for($i=$__FOR_START_2097140973__;$i > $__FOR_END_2097140973__;$i+=-2){ ?><! 倒序输出 -->
         <!-- <tr>
           <td>
             <?php echo ($i); ?>
