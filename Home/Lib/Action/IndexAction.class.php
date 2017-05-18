@@ -1,19 +1,17 @@
 <?php
 // 本类由系统自动生成，仅供测试用途
 class IndexAction extends Action {
-    public function _before_index(){
-      //做判断，如果没有登录跳转到登录页面
-      if(!isset($_SESSION['username']) || $_SESSION['username'] ==''){
-        $this->redirect('login/index');
-      }
-    }
     public function index(){
-      $city = M('City');
-      $arr = $city->select();
-      $this->assign('list',$arr);
-	    $this->display();
+	    //  echo "hello world";
+      echo "id=".$_GET['id']."</br>";
+      echo "num=".$_GET['num'];
     }
-    public function _after_index(){
-      echo "<script>alert('hello world')</script>";
+    public function day(){
+      echo "time=".$_GET['year']."年".$_GET['month']."月".$_GET['date']."日";
+    }
+    public function url(){
+      //URL的生成
+      // echo U("index/index");
+      echo U("index/index",array('id'=>1,'name'=>'dd'),'shtml');
     }
 }
