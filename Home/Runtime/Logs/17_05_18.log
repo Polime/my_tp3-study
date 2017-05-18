@@ -1,24 +1,6 @@
-[ 2017-05-18T19:43:39+08:00 ] 127.0.0.1 /index.php/city/%3C%7Bc.name%7D%3E
-ERR: 非法操作:
+[ 2017-05-18T20:25:19+08:00 ] 127.0.0.1 /index.php/login
+ERR: 模板不存在[./Home/Tpl/city/login.html]
 
-[ 2017-05-18T19:43:45+08:00 ] 127.0.0.1 /index.php/city/%3C%7Bc.name%7D%3E
-ERR: 非法操作:
-
-[ 2017-05-18T20:00:44+08:00 ] 127.0.0.1 /index.php/city/
-ERR: 非法操作:index
-
-[ 2017-05-18T20:02:45+08:00 ] 127.0.0.1 /index.php/city/tz
-ERR: 模板不存在[./Home/Tpl/city/tz.html]
-
-[ 2017-05-18T20:07:38+08:00 ] 127.0.0.1 /index.php/city/tz
-ERR: 非法操作:tz
-
-[ 2017-05-18T20:07:40+08:00 ] 127.0.0.1 /index.php/city/tz
-ERR: 非法操作:tz
-
-[ 2017-05-18T20:10:33+08:00 ] 127.0.0.1 /index.php/bj
-ERR: 模板不存在[./Home/Tpl/city/$name.html]
-
-[ 2017-05-18T20:13:34+08:00 ] 127.0.0.1 /index.php/login
+[ 2017-05-18T20:26:00+08:00 ] 127.0.0.1 /index.php/login
 ERR: 模板不存在[./Home/Tpl/city/login.html]
 

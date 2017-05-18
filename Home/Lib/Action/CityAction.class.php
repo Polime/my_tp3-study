@@ -1,30 +1,26 @@
 <?php
   class CityAction extends Action{
     function bj(){
-      $city = M('City');
-      $arr = $city->select();
-      $this->assign('list',$arr);
-      $this->display();
+      // $city = M('City');
+      // $arr = $city->select();
+      // $this->assign('list',$arr);
+      // $this->display();
+      $oi = new indexAction();
+      $oi->index();
     }
     function sh(){
-      $city = M('City');
-      $arr = $city->select();
-      $this->assign('list',$arr);
-      $this->display();
+      $oi = new indexAction();
+      $oi->index();
 
     }
     function gz(){
-      $city = M('City');
-      $arr = $city->select();
-      $this->assign('list',$arr);
-      $this->display();
+      $oi = new indexAction();
+      $oi->index();
 
     }
     function hz(){
-      $city = M('City');
-      $arr = $city->select();
-      $this->assign('list',$arr);
-      $this->display();
+      $oi = new indexAction();
+      $oi->index();
 
     }
     function _empty($name){
