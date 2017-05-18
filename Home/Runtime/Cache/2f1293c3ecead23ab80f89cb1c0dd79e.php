@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?>tz 不存在,<a href='__APP__/Index/index'>返回首页</a>

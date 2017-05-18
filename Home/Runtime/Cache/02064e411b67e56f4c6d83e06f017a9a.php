@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -17,7 +17,9 @@
   </head>
   <body>
     <div class="" id="daohang">
-      <foreach name="list" item="c">
-        <a href="__APP__/city/<{$c.name}>"><{$c.name}>|</a>
-      </foreach>
+      <?php if(is_array($list)): foreach($list as $key=>$c): ?><a href="__APP__/city/<?php echo ($c["name"]); ?>"><?php echo ($c["name"]); ?>|</a><?php endforeach; endif; ?>
     </div>
+
+    <h1>欢迎你访问上海网页</h1>
+  </body>
+</html>
