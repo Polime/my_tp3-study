@@ -5,6 +5,15 @@
     <title>left</title>
   </head>
   <body>
-    left
+    <foreach name="list" item='v'>
+      留言题目:<{$v.title}></br>
+      留言内容:<{$v.content}></br>
+      <!-- 留言时间:<{$v.time|date='Y m d H:i:s',###}></br> -->
+      留言时间:<{$v.time}></br>
+      留言人:<{$v.username}></br>
+      附件:<{$v.filename}></br>
+      -----------------------------</br>
+    </foreach>
+    <{$show}>
   </body>
 </html>
