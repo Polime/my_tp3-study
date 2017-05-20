@@ -1,29 +1,22 @@
 <?php
 // 本类由系统自动生成，仅供测试用途
 class IndexAction extends Action {
-    // public function index(){
-	  //    $user = M('User');
-    //    $arr = $user->select();
-    //    $this->assign('list',$arr);
-    //    $this->display();
-    // }
-    // public function info(){
-    //   $id = $_GET['id'];
-    //   $user = M('User');
-    //   $arr = $user->find($id);
-    //   if($arr){
-    //     // $this->success('Bing');
-    //     $this->assign('list',$arr);
-    //     $this->display();
-    //   }else{
-    //     // $this->error('Bong');
-    //     $this->redirect('User/test','',5,'页面正在跳转');
-    //   }
-    // }
     public function index(){
+	     //判断用户是否登录过，通过session判断
+       if(isset($_SESSION['username']) && $_SESSION['username'] != ''){
+         $this->display();
+       }else{
+         $this->redirect('Login/login');
+       }
+    }
+    public function top(){
+      // $this->assign('name',$_SESSION['name']);
       $this->display();
     }
-    public function getAjax(){
-      $this->ajaxReturn('这里是数据','信息','1');
+    public function left(){
+      $this->display();
+    }
+    public function right(){
+      $this->display();
     }
 }

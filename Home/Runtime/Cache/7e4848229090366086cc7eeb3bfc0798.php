@@ -3,25 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>index</title>
-    <script src="__PUBLIC__/Js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript">
-      $(function(){
-        $('button').bind('click',function(){
-          $.get('__URL__/getAjax',function(jdata){
-            if(jdata.status == 1){
-              $('div#did').html(jdata.data);
-            }
-          });
-        });
-      });
-    </script>
   </head>
-  <body>
-    <div style="height:100px;background:yellow" id="did"></div>
-    <button type="button" name="button">点击</button>
-    <script type="text/javascript">
-      document.write(new Date);
-    </script>
-
-  </body>
+  <frameset rows="20%,*">
+    <frame src="__URL__/top" name="top"/>
+    <frameset cols="50%,50%">
+      <frame src="__URL__/left" name="left"/>
+      <frame src="__URL__/right" name="right"/>
+    </frameset>
+  </frameset>
 </html>
